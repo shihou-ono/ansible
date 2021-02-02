@@ -1,0 +1,13 @@
+---
+- hosts: vyos
+  gather_facts: false
+  tasks:
+    - name: show version
+      vyos_command:
+        commands:
+          - show version
+      register: result_version
+    
+    - name: debug version
+      debug:
+        msg: "{{ result_version.stdout_lines[0] }}"

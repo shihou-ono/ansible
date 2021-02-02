@@ -1,0 +1,6 @@
+---
+ansible_network_os: vyos
+ansible_connection: network_cli
+ansible_user: test_user
+ansible_password: test_password
+
