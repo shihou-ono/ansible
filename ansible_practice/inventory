@@ -1,2 +1,2 @@
 [vyos]
-vyos01 ansible_host=10.0.0.2
+vyos01 ansible_host=10.0.0.3
